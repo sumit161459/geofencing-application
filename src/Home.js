@@ -149,7 +149,7 @@ class Home extends Component {
     
     return (
       <>
-      {this.state.center.lat===null && <h2>Enter your location to use the app</h2>}
+      {this.state.center.lat===null && <div style={{display:'flex',justifyContent:'center',height:'40px'}}><h2>Enter your location to use the app</h2></div>}
       {this.props.isLoggedIn && this.state.center.lat!==null &&
       <div >
         <div style={{display:'flex',justifyContent:'center',height:'40px'}}><h2>Latitude  {this.state.current.lat}</h2></div>
