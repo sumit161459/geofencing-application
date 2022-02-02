@@ -153,10 +153,9 @@ class Home extends Component {
       {this.props.isLoggedIn && this.state.center.lat!==null &&
       <div >
         <div style={{display:'flex',justifyContent:'center',height:'40px'}}><h2>Latitude  {this.state.current.lat}</h2></div>
-        <div style={{display:'flex',justifyContent:'center'}}><h2>Longitude  {this.state.current.lng}</h2></div>
+        <div style={{display:'flex',justifyContent:'center',height:'40px'}}><h2>Longitude  {this.state.current.lng}</h2></div>
         <div style={{display:'flex',justifyContent:'center',height:'40px'}}><h2>Fencing(in meter)  {this.state.distance}</h2></div>
-        <div style={{display:'flex',justifyContent:'center'}}><h2>Longitude  {this.state.current.lng}</h2></div>
-        <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <div style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'20px'}}>
         <button style={{background:'green',height:'30px',width:'150px'}}  onClick={this.currentLocation.bind(this)}>Change Center</button>
         <button style={{background:'grey',height:'30px',width:'150px',marginLeft:'5px'}}  onClick={this.saveLocation.bind(this)}>Save Location</button>
         </div>
